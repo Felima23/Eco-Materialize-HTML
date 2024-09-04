@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.579);
+}
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9fcc1;
+    padding: 1rem;
+}
+.form-img img{
+    width: 31rem;
+}
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+.form-header{
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    display: flex;
+}
+.loggin-button{
+    display: flex;
+    align-items: center;
+}
+.loggin-button button{
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    background-color:#5cff43;
+    cursor: pointer;
+}
+.loggin-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+.loggin-button button:hover{
+    opacity: 0.8;
+}
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #5cff43;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000001;
+}
+.input-box input:hover{
+    background-color: #eeeeee;
+}
+.input-box input:focus-visible{
+    outline: 1px solid #5cff43;
+}
+.input-box label, .genero-title h6{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.input-box input::placeholder{
+color: #000000be;
+}
+.genero-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.62rem;
+    padding: 0 0.5rem;
+}
+.genero-input{
+    display: flex;
+    align-items: center;
+}
+.genero-input input{
+    margin-right: 0.35rem;
+}
+.genero-input label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.continue-button button{
+    width: 100%;
+    padding: 0.62rem;   
+    margin-top: 1rem;
+    border: none;
+    background-color:#5cff43;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continue-button button a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+.continue-button button:hover{
+    opacity: 0.8;
+}
+
+
+
+@media screen and (max-width: 1330px){
+    .form-img{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1064px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 1rem;
+    }
+    .genero-inputs{
+        margin-top: 2rem;
+    }
+    .genero-group{
+        flex-direction: column;
+    }
+    .genero-input{
+        margin-top: 0.5rem;
+    }
+}

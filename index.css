@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+/*Inicio - Configs de CABEÇALHO*/
+header{
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    margin-bottom: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .container{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+header .container .menu-nav ul{
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+header .container .menu-nav ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.808);
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+header .container .menu-nav ul a:hover{
+    color: orangered;
+}
+.btn-login button{
+    width: 170px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    background-color: rgb(185, 253, 83);
+    border-radius: 15px;
+    font-weight: 900;
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.808);
+}
+.btn-login button i{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.btn-login button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+}
+.img-logo img{
+    width: 150px;
+    height: 140px;   
+    cursor: pointer;
+}
+/*Fim - Configs de CABEÇALHO*/
+
+/*INICIO - Configs de SECTION 1 SEÇÃO*/
+.section-primeira-secao{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url(IMG/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 100px;
+}
+section .sec-container{
+    margin-top: 420px;
+    margin-left: 45px ;
+    display: flex;
+    gap: 25px;
+}
+section .sec-container button{
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    background-color: rgba(255, 68, 0, 0.863);
+    cursor: pointer;
+    width: 165px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+section .sec-container button i{
+    margin-right: 5px;
+    font-size: 15px;
+}
+section .sec-container button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+}
+/*FIM - Configs de SECTION 1 SEÇÃO*/ 
+
+
+/*INICIO - Configs de SECTION 2 SEÇÃO*/
+.section-segunda-secao{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+.container-quem-somos{
+    align-items: center;
+    display: flex;
+    gap: 50px;
+}
+.txt{
+    margin-left: 100px;
+}
+.txt h3{
+    color:rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.txt h3:hover{
+    transform: scale(1.03);
+}
+.txt h1{
+   color: rgba(0, 0, 0, 0.856);
+    font-size: 42px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.txt h1:hover{
+    transform: scale(1.03);
+    color: orangered;
+}
+.section-segunda-secao .txt p{
+    text-align: left;
+    font-size: 18px;
+    width: 600px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+.section-segunda-secao .txt p:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+.video{
+    margin-right: 100px;
+}
+.video video{
+    width: 500px;
+    height: 280px;
+    border-radius: 30px;
+    border: 3px solid orangered;
+    transition: 0.2s ease;
+}
+.video video:hover{
+    box-shadow: 0px 0px 10px orangered;
+    transform: scale(1.1);
+}
+
+/*FIM - Configs de SECTION 2 SEÇÃO*/
+
+
+
+/*INICIO - Configs de SECTION 3 SEÇÃO*/
+
+.section-terceira-secao{
+    width: 100%;
+    height: 500px;
+    background-color:#55ff9f2b;
+}
+.section-terceira-secao h1{
+text-align: center;
+font-size: 42px;
+cursor: pointer;
+color: rgba(0, 0, 0, 0.737);
+padding-top: 15px;
+}
+.section-terceira-secao h1 span{
+    color: black;
+    font-size: 44px;
+}
+
+.numeros-projeto{
+    display: flex;
+    margin-top: 100px;
+}
+.numeros-projeto .txt{
+    width: 320px;
+    height: 225px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: rgb(185, 253, 83);
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px black;
+}
+.numeros-projeto .txt:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.numeros-projeto .txt p{
+    width:300px;
+    padding: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+.section-terceira-secao h2{
+    text-align: center;
+}
+.section-terceira-secao h2 i{
+    margin-right: 10px;
+    font-size: 30px;
+}
+/*FIM - Configs de SECTION 3 SEÇÃO*/
+
+
+
+
+
+/*INICIO - Configs de SECTION 4 SEÇÃO*/
+.section-quarta-secao{
+    width: 100%;
+    height: 500px;
+}
+.section-quarta-secao h1{
+    color: rgba(0, 0, 0, 0.737);
+    text-align: center;
+    font-size: 42px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.section-quarta-secao h1 span{
+    color: black;
+}
+.section-quarta-secao .como-funciona{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.section-quarta-secao .como-funciona .etapas{
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.399);
+    transition: 0.3s ease   ;
+}   
+.section-quarta-secao .como-funciona .etapas:hover{
+    transform: scale(1.1);
+}
+.section-quarta-secao .como-funciona .etapas i{
+    font-size: 35px;
+    color: #2E8B57;
+    margin-top: 15px;
+}
+.section-quarta-secao .como-funciona .etapas h3{
+    color: #333;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.section-quarta-secao .como-funciona .etapas p{
+    color: #575757;
+    font-size: 13px;
+    font-weight: 900;
+    margin-top: 40px;
+    text-align: center;
+}
+/*FIM - Configs de SECTION 4 SEÇÃO*/
+
+
+
+
+
+
+
+/*INICIO - Configs de SECTION 5 SEÇÃO*/
+.section-quinta-secao{
+    width: 100%;
+    height: 600px;
+    border: 3px solid black;
+}
+.section-quinta-secao h1{
+    color: rgba(0, 0, 0, 0.737);
+    text-align: center;
+    font-size: 42px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.section-quinta-secao h1 span{
+    color: black;
+}
+.section-quinta-secao i{
+    margin-right: 10px;
+    color:rgba(185, 253, 83, 0.866);
+}
+.section-quinta-secao p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+    padding: 0px 50px;
+}
+.section-quinta-secao .mapa-coleta{
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.203);
+    border-radius: 10px;
+    
+}
+.section-quinta-secao .mapa-coleta iframe{
+    width: 100%;
+    height: 390px;
+    border-radius: 10px;
+}
+/*FIM - Configs de SECTION 5 SEÇÃO*/
+
+
+/*INICIO - Configs do FOOOTER*/
+footer{
+    width: 100%;
+    background-color: #2e2e2eb8;
+    color: #ffffff;
+    font-size: 15px;
+}
+footer ul{
+    list-style: none;
+}
+footer .footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.footer-logo p{
+    width: 350px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.footer-logo img{
+    width: 180px;
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links a, li{
+    padding-top: 5px;
+    color: white;  
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+.footer-links a:hover{
+    color: orangered;
+}
+.footer-contato{
+    text-align: center;
+}
+.footer-contato p{
+    padding-top: 5px;
+    font-weight: 500;
+}
+.footer-redesocial{
+    text-align: center;
+}
+.footer-redesocial ul{
+    margin-top: 10px;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.footer-redesocial ul i{
+    font-size: 25px;
+    color: white;
+    transition: 0.2s ease;
+}
+.footer-redesocial i:hover{
+    color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+

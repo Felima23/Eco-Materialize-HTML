@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.579);
+}
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9fcc1;
+    padding: 1rem;
+}
+.form-img img{
+    width: 20rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.txt-form h1{
+font-size: 40px;
+}
+.txt-form h1::after{
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #5cff43;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+.form-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+} 
+.div-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.1rem;
+}
+.div-input input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 3rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000001;
+    text-align: center;
+}
+.div-input input:hover{
+    background-color: #eeeeee;
+}
+.div-input input:focus-visible{
+    outline: 1px solid #5cff43;
+}
+.div-input input::placeholder{
+    color: #000000be;
+}
+.div-input label{
+    font-size: 0.91rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.btn-entrar{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-entrar button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5cff43;
+    cursor: pointer;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    transition: 0.2s ease;
+}
+.btn-entrar button:hover{
+    opacity: 0.8;
+}
